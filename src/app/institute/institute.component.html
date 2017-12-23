@@ -1,0 +1,171 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Institute Master</h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Master</a></li>
+        <li class="active">Institute Master</li>
+      </ol>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title">Create Institute</h3>
+        </div>
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Institute Name</label><br>
+                <input type="text" name="institute name" class="form-control" style="width:100%;" >
+              </div>
+            </div><br>
+            <div class="col-md-4">
+              <div class="form-group">
+
+                <button onclick="myFunction()">Add Sub Institute</button>
+
+                <p id="demo"></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="control-group" id="fields">
+                <div class="controls">
+                  <form role="form" autocomplete="off">
+                    <div class="entry input-group">
+                      <input class="form-control" name="fields[]" type="text" placeholder="Sub Institute Name" style="width:100%" />
+                      <span class="input-group-btn">
+												<button class="btn btn-success btn-add" type="button">
+													<span class="glyphicon glyphicon-plus"></span>
+												</button>
+											</span>
+                    </div>
+                  </form>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Address 1</label><br>
+                <input type="text" name="address1" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Address 2</label><br>
+                <input type="text" name="address2" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>City</label><br>
+                <input type="text" name="trust name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>State</label><br>
+                <input type="text" name="state" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Country</label><br>
+                <input type="text" name="country" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Pincode</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot; 999-999&quot;" data-mask="" >
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Contact No.</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Email Address</label><br>
+                <input type="email" name="email" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Website</label><br>
+                <input type="text" name="website" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+
+                <p class="help-block">Please upload logo of maximum height 150px.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Medium</label><br>
+                <select class="form-control" style="width:100%;">
+                  <option selected="select medium" disabled>Select Medium</option>
+                  <option>English</option>
+                  <option>Gujarati</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Education Board</label><br>
+                <select class="form-control" style="width:100%;">
+                  <option selected="select education board" disabled>Select Education Board</option>
+                  <option>Gujarat Board</option>
+                  <option>CBSC</option>
+                  <option>ICSE</option>
+                  <option>IB</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+            </div>
+
+            <div class="col-lg-2">
+              <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
