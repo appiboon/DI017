@@ -8,9 +8,7 @@
     <section class="content-header">
       <h1>Institute Master</h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Master</a></li>
-        <li class="active">Institute Master</li>
+        <li><b><a routerLink="/institute-search" class="pull-right"><span style="color:blue;">Search Institute</span></a></b></li>
       </ol>
     </section>
     <!-- main content -->
@@ -44,7 +42,7 @@
                 <div class="controls">
                   <form role="form" autocomplete="off">
                     <div class="entry input-group">
-                      <input class="form-control" name="fields[]" type="text" placeholder="Sub Institute Name" style="width:100%" />
+                      <input class="form-control" name="fields[]" type="text" placeholder="Sub Institute Name" style="width:100%"; />
                       <span class="input-group-btn">
 												<button class="btn btn-success btn-add" type="button">
 													<span class="glyphicon glyphicon-plus"></span>
@@ -131,8 +129,8 @@
             <div class="col-md-4">
               <div class="form-group">
                 <label>Medium</label><br>
-                <select class="form-control" style="width:100%;">
-                  <option selected="select medium" disabled>Select Medium</option>
+                <select class="form-control select2" style="width:100%;">
+                  <option selected="selected" disabled>Select Medium</option>
                   <option>English</option>
                   <option>Gujarati</option>
                 </select>
@@ -141,8 +139,8 @@
             <div class="col-md-4">
               <div class="form-group">
                 <label>Education Board</label><br>
-                <select class="form-control" style="width:100%;">
-                  <option selected="select education board" disabled>Select Education Board</option>
+                <select class="form-control select2" style="width:100%;">
+                  <option selected="selected" disabled>Select Education Board</option>
                   <option>Gujarat Board</option>
                   <option>CBSC</option>
                   <option>ICSE</option>
@@ -167,5 +165,5 @@
     </section>
   </div>
   <!-- /.content-wrapper -->
-
+<app-footer></app-footer>
 </div>
