@@ -1,0 +1,164 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Create Exam</h1>
+      <ol class="breadcrumb">
+        <li><b><a routerLink="/exam-search" class="pull-right"><span style="color:blue;">Search Exam</span></a></b></li>
+      </ol>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <!-- Select name of employee -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Sub Institute</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="" disabled>Sub Institute</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Section</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="select section" disabled>select section</option>
+                  <option>Play Group</option>
+                  <option>Primary</option>
+                  <option>Secondary</option>
+                  <option>Science</option>
+                  <option>Arts</option>
+                  <option>Commerce</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Standard</label><br>
+                <input type="text" class="form-control" style="width:100%;">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Division</label><br>
+                <input type="text" class="form-control" style="width:100%;">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Type</label>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>select Exam Type</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Conducted By</label>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="select teacher" disabled>select Teacher</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label>Title</label>
+                <input type="text" class="form-control" style="width:100%;">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label>Date</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-calendar" id="datepicker"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                  </div>
+                  <!-- /.input group -->
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="form-group">
+                  <label>Start Time</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <input type="text" class="form-control" data-inputmask="'alias': 'HH:MM'" data-mask>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="form-group">
+                  <label>End Time</label><br>
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <input type="text" class="form-control" data-inputmask="'alias': 'HH:MM'" data-mask>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label>Subject</label><br>
+                  <select class="form-control select2" style="width:100%;" >
+                    <option selected="selected" disabled>Select Subject</option>
+                  </select>
+                </div>
+              </div>
+              <div  class="col-md-2">
+                <div class="form-group">
+                  <label>Max Marks</label><br>
+                  <input type="text" class="form-control" style="width:100%;" maxlength="3">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label>Min Marks</label><br>
+                  <input type="text" class="form-control" style="width:100%;" maxlength="3">
+                </div>
+              </div><br>
+              <button class="btn btn-primary" data-role="add">
+                <span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+            </div>
+            <div class="col-lg-2">
+              <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</div>
+<!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>

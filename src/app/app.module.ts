@@ -29,8 +29,21 @@ import { ExamSearchComponent } from './exam-search/exam-search.component';
 import { FeesComponent } from './fees/fees.component';
 import { FeesSearchComponent } from './fees-search/fees-search.component';
 import { FeesSetupComponent } from './fees-setup/fees-setup.component';
-import { SearchFeesHeadComponent } from './search-fees-head/search-fees-head.component';
 import { FeesHeadSearchComponent } from './fees-head-search/fees-head-search.component';
+import { HolidayComponent } from './holiday/holiday.component';
+import { TimetableComponent } from './timetable/timetable.component';
+import { CastComponent } from './cast/cast.component';
+import { SubCastComponent } from './sub-cast/sub-cast.component';
+import { CreateGroupComponent } from './create-group/create-group.component';
+import { RoleComponent } from './role/role.component';
+import { UserComponent } from './user/user.component';
+import { UserSearchComponent } from './user-search/user-search.component';
+import { ReligionComponent } from './religion/religion.component';
+import { ExamTypeComponent } from './exam-type/exam-type.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { EventsComponent } from './events/events.component';
+import { EventsSearchComponent } from './events-search/events-search.component';
+import { CollectFeesComponent } from './collect-fees/collect-fees.component';
 
 
 
@@ -60,6 +73,20 @@ import { FeesHeadSearchComponent } from './fees-head-search/fees-head-search.com
     FeesSearchComponent,
     FeesSetupComponent,
     FeesHeadSearchComponent,
+    HolidayComponent,
+    TimetableComponent,
+    CastComponent,
+    SubCastComponent,
+    CreateGroupComponent,
+    RoleComponent,
+    UserComponent,
+    UserSearchComponent,
+    ReligionComponent,
+    ExamTypeComponent,
+    NotificationsComponent,
+    EventsComponent,
+    EventsSearchComponent,
+    CollectFeesComponent,
   ],
   imports: [
     BrowserModule,

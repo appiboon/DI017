@@ -41,6 +41,7 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+<!--use for the search icon -->
   <style>
     .entry:not(:first-of-type)
     {
@@ -60,7 +61,7 @@
       <nav class="navbar navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"><b>Digi</b> Institute</a>
+            <a routerLink="/index" class="navbar-brand">Digi Institute</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
               <i class="fa fa-bars"></i>
             </button>
@@ -85,16 +86,16 @@
                   <li><a routerLink="/student">Student Master</a></li>
                   <li><a routerLink="/exam">Exam Master</a></li>
                   <li><a routerLink="/fees">Fees Master</a></li>
-                  <li><a routerLink="/feesSetup - monthWise">Fees Setup - MonthWise</a></li>
+                  <li><a routerLink="/fees-setup">Fees Setup - MonthWise</a></li>
                   <li><a routerLink="/holiday">Holiday Master</a></li>
                   <li><a routerLink="/timetable">Timetable</a></li>
                   <li><a routerLink="/cast">Cast Master</a></li>
                   <li><a routerLink="/sub-cast">Sub-Cast</a></li>
-                  <li><a routerLink="/createGroup">Create Group</a></li>
+                  <li><a routerLink="/create-group">Create Group</a></li>
                   <li><a routerLink="/role">Role Master</a></li>
                   <li><a routerLink="/user">User Master</a></li>
                   <li><a routerLink="/religion">Religion Master</a></li>
-                  <li><a routerLink="/examType">Exam Type Master</a></li>
+                  <li><a routerLink="/exam-type">Exam Type Master</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -102,14 +103,14 @@
                 <ul class="dropdown-menu" role="menu">
                   <li><a routerLink="/attendance">Attendance</a></li>
                   <li><a routerLink="/result">Result</a></li>
-                  <li><a routerLink="/fees">Fees</a></li>
+                  <li><a routerLink="/collect-fees">Collect Fees</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscelleneus <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a routerLink="/notification">Notifications</a></li>
-                  <li><a routerLink="/event">Events</a></li>
+                  <li><a routerLink="/notifications">Notifications</a></li>
+                  <li><a routerLink="/events">Events</a></li>
                 </ul>
               </li>
               <li><a routerLink="/reports">Reports</a></li>
@@ -126,14 +127,14 @@
                 <!-- Menu Toggle Button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <!-- The user image in the navbar-->
-                  <img src="assets/dist/images/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <img src="assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
                   <span class="hidden-xs">Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
                   <li class="user-header">
-                    <img src="assets/dist/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                     <p>
                       Alexander Pierce - Web Developer
@@ -252,9 +253,9 @@
       )
 
       //Date picker
-      //$('#datepicker').datepicker({
-      //autoclose: true
-      //})
+      $('#datepicker').datepicker({
+      autoclose: true
+      })
 
       //iCheck for checkbox and radio inputs
       $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({

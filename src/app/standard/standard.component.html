@@ -1,0 +1,96 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Add Standard</h1>
+      <ol class="breadcrumb">
+        <li><b><a routerLink="/standard-search" class="pull-right"><span style="color:blue;">Search Standard</span></a></b></li>
+      </ol>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <!-- Select name of employee -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Sub Institute</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Sub Institute</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Section</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Section</option>
+                  <option>Play Group</option>
+                  <option>Primary</option>
+                  <option>Secondary</option>
+                  <option>Science</option>
+                  <option>Arts</option>
+                  <option>Commerce</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Standard</label><br>
+                <input type="text" name="standard" class="form-control" style="width:100%";>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Division</label><br>
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">A</label>
+                </div>
+
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">B</label>
+                </div>
+
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">C</label>
+                </div>
+
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">D</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Description</label><br>
+                <input type="text" name="description" class="form-control" style="width:100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+            </div>
+            <div class="col-lg-2">
+              <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>

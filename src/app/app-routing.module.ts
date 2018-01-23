@@ -20,6 +20,20 @@ import {FeesComponent} from './fees/fees.component';
 import {FeesSearchComponent} from './fees-search/fees-search.component';
 import {FeesSetupComponent} from './fees-setup/fees-setup.component';
 import {FeesHeadSearchComponent} from './fees-head-search/fees-head-search.component';
+import {HolidayComponent} from './holiday/holiday.component';
+import {TimetableComponent} from './timetable/timetable.component';
+import {CastComponent} from './cast/cast.component';
+import {SubCastComponent} from './sub-cast/sub-cast.component';
+import {CreateGroupComponent} from './create-group/create-group.component';
+import {RoleComponent} from './role/role.component';
+import {UserComponent} from './user/user.component';
+import {UserSearchComponent} from './user-search/user-search.component';
+import {ReligionComponent} from './religion/religion.component';
+import {ExamTypeComponent} from './exam-type/exam-type.component';
+import {NotificationsComponent} from './notifications/notifications.component';
+import {EventsComponent} from './events/events.component';
+import {EventsSearchComponent} from './events-search/events-search.component';
+import {CollectFeesComponent} from './collect-fees/collect-fees.component';
 import {AuthenticationGuard} from "./authentication.guard";
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -47,6 +61,21 @@ const appRoutes: Routes = [
   { path: 'fees_search', canActivate: [AuthenticationGuard], component: FeesSearchComponent},
   { path: 'fees_setup', canActivate: [AuthenticationGuard], component: FeesSetupComponent},
   { path: 'fees_head_search', canActivate: [AuthenticationGuard], component: FeesHeadSearchComponent},
+  { path: 'holiday', canActivate: [AuthenticationGuard], component: HolidayComponent},
+  { path: 'timetable', canActivate: [AuthenticationGuard], component: TimetableComponent},
+  { path: 'cast', canActivate: [AuthenticationGuard], component: CastComponent},
+  { path: 'sub-cast', canActivate: [AuthenticationGuard], component: SubCastComponent},
+  { path: 'create-group', canActivate: [AuthenticationGuard], component: CreateGroupComponent},
+  { path: 'role', canActivate: [AuthenticationGuard], component: RoleComponent},
+  { path: 'user', canActivate: [AuthenticationGuard], component: UserComponent},
+  { path: 'user_search', canActivate: [AuthenticationGuard], component: UserSearchComponent},
+  { path: 'religion', canActivate: [AuthenticationGuard], component: ReligionComponent},
+  { path: 'exam-type', canActivate: [AuthenticationGuard], component: ExamTypeComponent},
+  { path: 'notifications', canActivate: [AuthenticationGuard], component: NotificationsComponent},
+  { path: 'events', canActivate: [AuthenticationGuard], component: EventsComponent},
+  { path: 'events_search', canActivate: [AuthenticationGuard], component: EventsSearchComponent},
+  { path: 'collect-fees', canActivate: [AuthenticationGuard], component: CollectFeesComponent},
+
 
 ];
 

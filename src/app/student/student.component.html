@@ -1,0 +1,339 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Add Student</h1>
+      <ol class="breadcrumb">
+        <li><b><a routerLink="/student-search" class="pull-right"><span style="color:blue;">Search Student</span></a></b></li>
+      </ol>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Sub Institute</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Sub Institute</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Section</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Section</option>
+                  <option>Play Group</option>
+                  <option>Primary</option>
+                  <option>Secondary</option>
+                  <option>Science</option>
+                  <option>Arts</option>
+                  <option>Commerce</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>G.R. No</label><br>
+                <input type="text" name="gr no" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Aadhar No</label><br>
+                <input type="text" name="aadhar no" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Standard</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Standard</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Division</label><br>
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">A</label>
+                </div>
+
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">B</label>
+                </div>
+
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">C</label>
+                </div>
+
+                <div class="checkbox-inline">
+                  <label><input type="checkbox" value="">D</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Roll No</label><br>
+                <input type="text" name="roll no" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>First Name</label><br>
+                <input type="text" name="fstname" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Last Name</label><br>
+                <input type="text" name="lstname" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Gender</label><br>
+
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Male</b>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Female</b>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Other</b>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Address 1</label><br>
+                <input type="text" name="address1" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Address 2</label><br>
+                <input type="text" name="address2" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>City</label><br>
+                <input type="text" name="trust name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <!-- State and City-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>State</label><br>
+                <input type="text" name="state" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Country</label><br>
+                <input type="text" name="country" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <!-- Pincode and Country -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Pincode</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot; 999-999&quot;" data-mask="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Blood Group</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected">Select Blood Group</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>o+</option>
+                  <option>o-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Date-of-Birth</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar" id="datepicker"></i>
+                  </div>
+                  <input type="date" class="form-control pull-right" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                </div>
+                <!-- /.input group -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Father Name</label><br>
+                <input type="text" name="father name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Last Name</label><br>
+                <input type="text" name="last name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Contact No.</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Email Address</label><br>
+                <input type="email" name="email" class="form-control" style="width:100%;">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Blood Group</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected">Select Blood Group</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>o+</option>
+                  <option>o-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Mother Name</label><br>
+                <input type="text" name="father name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Last Name</label><br>
+                <input type="text" name="last name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Contact No.</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Email Address</label><br>
+                <input type="email" name="email" class="form-control" style="width:100%;">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Blood Group</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected">Select Blood Group</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>o+</option>
+                  <option>o-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Last Attended School</label><br>
+                <input type="text" name="last attended school" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Addmission Year</label><br>
+                <input type="text" name="addmission year" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Standard</label><br>
+                <input type="text" class="form-control" style="width:100%;" maxlength="2">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Division</label><br>
+                <input type="text" class="form-control" style="width:100%;" maxlength="10">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+
+                <p class="help-block">Please upload photo of size 300X300 px.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              <div class="col-lg-2">
+                <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+              </div>
+
+              <div class="col-lg-2">
+                <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</div>
+<!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>

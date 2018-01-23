@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Create Designation</h1>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Designation</label><br>
+                <input type="text" name="designation" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Designation For</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Designation</option>
+                  <option>Trustee</option>
+                  <option>Employee</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+            </div>
+            <div class="col-lg-2">
+              <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>

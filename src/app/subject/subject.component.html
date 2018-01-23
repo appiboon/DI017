@@ -1,0 +1,79 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Create Subject</h1>
+      <ol class="breadcrumb">
+        <li><b><a routerLink="/subject-search" class="pull-right"><span style="color:blue;">Search Subject</span></a></b></li>
+      </ol>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <!-- Select name of employee -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Description</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="description">Description</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Standard</label><br>
+                <input type="text" class="form-control" style="width:100%;">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Division</label><br>
+                <input type="text" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="control-group" id="fields">
+                <div class="controls">
+                  <form role="form" autocomplete="off">
+                    <label>Subject Name</label>
+                    <div class="entry input-group">
+                      <input class="form-control" name="fields[]" type="text" placeholder="Sub Institute Name" style="width:100%"; />
+                      <span class="input-group-btn">
+												<button class="btn btn-success btn-add" type="button">
+													<span class="glyphicon glyphicon-plus"></span>
+												</button>
+											</span>
+                    </div>
+                  </form>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+            </div>
+
+            <div class="col-lg-2">
+              <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>

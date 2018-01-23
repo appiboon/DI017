@@ -1,0 +1,194 @@
+<app-header></app-header>
+
+<div class="hold-transition skin-blue layout-top-nav">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Create Timetable</h1>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Sub Institute</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Sub-Institute</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Select Standard -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Standard</label><br>
+                <select class="form-control select2" style="width:100%;">
+                  <option selected="selected" disabled>Select Standard</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+            </div>
+            <!--select division -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Division</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Division</option>
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                  <option>D</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div data-role="dynamic-fields">
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <label>Time</label>
+                    <input type="text" name="time" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="time" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <label>Monday</label>
+                    <select class="form-control select2" style="width:100%;" >
+                      <option selected="selected" disabled>Select Subject</option>
+                      <option>Maths</option>
+                      <option>Science</option>
+                      <option>English</option>
+                      <option>Social Science</option>
+                      <option>Hindi</option>
+                      <option>Gujarati</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control select2" style="width:100%;" >
+                      <option selected="selected" disabled>Select Teacher</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <label>Tuesday</label>
+                    <input type="text" name="tuesday" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="tuesday" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <label>Wednesday</label>
+                    <input type="text" name="wendesday" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="wendesday" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <label>Thursday</label>
+                    <input type="text" name="thursday" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="thursday" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <label>Friday</label>
+                    <input type="text" name="friday" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="friday" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <label>Saturday</label>
+                    <input type="text" name="saturday" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="saturday" class="form-control">
+                  </div>
+                </div><br><br>
+                <button class="btn btn-primary" data-role="add">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </button>
+                <button class="btn btn-danger" data-role="remove">
+                  <span class="glyphicon glyphicon-remove"></span>
+                </button>
+              </div>
+            </div>
+          </div>  <!-- /div.row -->
+          <div class="row">
+            <div class="col-xs-2">
+              <div class="form-group">
+                <label>Time</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control">
+              </div>
+            </div><br>
+            <div class="col-xs-2">
+              <div class="form-group">
+                <label></label>
+                <input type="text" class="form-control" placeholder="Recess....." />
+              </div>
+            </div><br>
+            <button class="btn btn-primary" data-role="add">
+              <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <button class="btn btn-danger" data-role="remove">
+              <span class="glyphicon glyphicon-remove"></span>
+            </button>
+          </div>
+
+          <div class="box-body">
+            <div class="row">
+              <div class="col-lg-2">
+                <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+              </div>
+              <div class="col-lg-2">
+                <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>

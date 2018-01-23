@@ -1,0 +1,238 @@
+<app-header></app-header>
+<div class="hold-transition skin-blue layout-top-nav">
+
+  <div class="content-wrapper">
+    <!-- content header (page header) -->
+    <section class="content-header">
+      <h1>Add Employee</h1>
+      <ol class="breadcrumb">
+        <li><b><a routerLink="/employee-search" class="pull-right"><span style="color:blue;">Search Employee</span></a></b></li>
+      </ol>
+    </section>
+    <!-- main content -->
+    <section class="content">
+      <!--select2 example -->
+      <div class="box box-default">
+        <!-- /.box-header-->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Sub Institute</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Sub Institute</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Employee No</label><br>
+                <input type="text" class="form-control" style="width:100%;">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>First Name</label><br>
+                <input type="text" name="fstname" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Middle Name</label><br>
+                <input type="text" name="midname" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Last Name</label><br>
+                <input type="text" name="lstname" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Employee Type</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Employee Type</option>
+                  <option>Temporary</option>
+                  <option>Visitor</option>
+                  <option>Permanent</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Staff Type</label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Teaching</b>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Non-Teaching</b>
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Designation</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="selected" disabled>Select Designation</option>
+                  <option>Employee</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Address 1 & 2 -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Address 1</label><br>
+                <input type="text" name="address1" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Address 2</label><br>
+                <input type="text" name="address2" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>City</label><br>
+                <input type="text" name="trust name" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <!-- State and City-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>State</label><br>
+                <input type="text" name="state" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+            <!-- Pincode -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Pincode</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot; 999-9999&quot;" data-mask="" >
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Country</label><br>
+                <input type="text" name="country" class="form-control" style="width:100%;" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Masking in Contact no. -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Contact No.</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" >
+              </div>
+            </div>
+            <!-- /end of masking -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Email Address</label><br>
+                <input type="email" name="email" class="form-control" style="width:100%;">
+              </div>
+            </div>
+            <!-- Select Gender -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Gender</label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Male</b>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Female</b>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio"><b>Other</b>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- end of masking -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Blood Group</label><br>
+                <select class="form-control select2" style="width:100%;" >
+                  <option selected="Selected">Select Blood Group</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>o+</option>
+                  <option>o-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                </select>
+              </div>
+            </div>
+            <!-- masking in date of birth (dd/mm/yyyy) with datepicker -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Date-of-Birth</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar" id="datepicker"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                </div>
+                <!-- /.input group -->
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <!-- end of masking -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Aadhar No</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot;9999-9999-9999&quot;" data-mask="" >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PAN Number</label><br>
+                <input type="text" class="form-control" style="width:100%;" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+
+                <p class="help-block">Please upload logo of maximum height 150px.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+            </div>
+
+            <div class="col-lg-2">
+              <button type="remove" class="btn btn-success btn-block btn-flat">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+  <app-footer></app-footer>
+</div>
